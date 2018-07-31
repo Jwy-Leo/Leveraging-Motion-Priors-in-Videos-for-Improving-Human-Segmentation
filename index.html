@@ -79,10 +79,10 @@
 										<img src="images/method_image.png" alt="principle" height="400" width="640">
 										</p>
 
-										<div  style="width: 1250px; word-break: break-all;">
+										<div  style="width: 1000px; word-break: break-all;">
 										<p>
-										Our goal is to obtain a set of motion prior m (i.e., candidate foreground mask) from video frames. Although many sophisticated motion segmentation methods can be used, we simply apply a state-of-the-art optical flow method [43]. Then, we obtain m as the binarized flow map such that mi = 1 if its flow magnitude is larger than a threshold τ . Since surveillance cameras in our dataset are typically stationary, we may assume that most background and foreground pixels corresponding to small and large flow magnitude, respectively. For non-stationary cameras, other motion segmentation methods (e.g., [44]) can be used to handle camera motion.	
-										These automatically obtained motion priors inevitably will be noisy and contain outliers. Hence, we propose a memory-network-based policy model to select more accurate ones instead of directly finetuning the segmenter with all noisy labels.
+										Our goal is to obtain a set of motion prior m (i.e., candidate foreground mask) from video frames. Although many sophisticated motion segmentation methods can be used, we simply apply flownet2. Then, we obtain m as the binarized flow map such that m_{i} = 1 if its flow magnitude is larger than a threshold τ . Since surveillance cameras in our dataset are typically stationary, we may assume that most background and foreground pixels corresponding to small and large flow magnitude, respectively. For non-stationary cameras, other motion segmentation methods can be used to handle camera motion.	
+										<br>These automatically obtained motion priors inevitably will be noisy and contain outliers. Hence, we propose a memory-network-based policy model to select more accurate ones instead of directly finetuning the segmenter with all noisy labels.
 										</p>
 										</div>
 									</section>
