@@ -84,7 +84,7 @@
 										</p>
 
 										<div  style="width: 1000px; word-break: break-all;">
-										<p>
+										<p align="center">
 										Our goal is to obtain a set of motion prior m (i.e., candidate foreground mask) from video frames. Although many sophisticated motion segmentation methods can be used, we simply apply Flownet2. Then, we obtain m as the binarized flow map such that m<sub>i</sub> = 1 if its flow magnitude is larger than a threshold &tau;. Since surveillance cameras in our dataset are typically stationary, we may assume that most background and foreground pixels corresponding to small and large flow magnitude, respectively. For non-stationary cameras, other motion segmentation methods can be used to handle camera motion.	
 										<br>These automatically obtained motion priors inevitably will be noisy and contain outliers. Hence, we propose a memory-network-based policy model to select more accurate ones instead of directly finetuning the segmenter with all noisy labels.
 										</p>
