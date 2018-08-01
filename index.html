@@ -59,7 +59,7 @@
 										<img src="images/principle_image.png" alt="principle" height="400" width="640">
 										</p>
 
-										<div   style="margin:0px auto; width: 1000px;  text-align:justify;">
+										<div   style="margin:0px auto; text-align:justify;">
 										In this work, we propose to leverage “motion prior” in videos which is potentially corresponding to human segments for improving human segmentation in a weakly-supervised active learning setting. 
 We propose to learn a memory-network-based policy model to select strong candidate segments (referred to as strong motion prior) through reinforcement learning. 
 In a newly collected surveillance camera dataset and a publicly available UrbanStreet dataset, our proposed method improves the performance of human segmentation across multiple scenes and modalities (i.e., RGB to Infrared (IR)). 
@@ -83,7 +83,7 @@ Last but not least, our method is empirically complementary to existing domain a
 										<img src="images/method.jpg" alt="principle" height="400" width="1000">
 										</p>
 
-										<div   style="margin:0px auto; width: 1000px;  text-align:justify;">
+										<div   style="margin:0px auto; text-align:justify;">
 										Our goal is to select a set of "motion prior" from video frames. The candidate motion priors are obtained from binarized optical flow maps, which defines a foreground pixel if the flow magnitude is larger than a threshold.
 										These automatically obtained motion priors inevitably will be noisy and contain outliers. Hence, we propose a memory-network-based policy model, trained by reinforcement learning on the source domain. For inference on the target domain, we use the policy model to select more accurate ones  instead of directly finetuning the segmenter with all noisy labels.
 										</div>
