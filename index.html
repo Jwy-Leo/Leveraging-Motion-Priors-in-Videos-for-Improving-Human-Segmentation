@@ -81,10 +81,8 @@
 										</p>
 
 										<div   style="margin:0px auto; width: 1000px;  text-align:justify;">
-										
-										Our goal is to obtain a set of motion prior (i.e., candidate foreground mask) from video frames. Then, we obtain motion prior as the binarized flow map such that if its flow magnitude is larger than a threshold. 
+										Our goal is to select a set of "motion prior" from video frames. The candidate motion priors are obtained from binarized optical flow maps, which defines a foreground pixel if the flow magnitude is larger than a threshold.
 										These automatically obtained motion priors inevitably will be noisy and contain outliers. Hence, we propose a memory-network-based policy model, trained by reinforcement learning on the source domain. For inference on the target domain, we use the policy model to select more accurate ones  instead of directly finetuning the segmenter with all noisy labels.
-										
 										</div>
 									</section>
 								</div>
